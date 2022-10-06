@@ -1,0 +1,10 @@
+in1 = int(input("first number: "))
+in2 = int(input("second number: "))
+
+print("Sum: " + str(in1+in2))
+print("Difference: " + str(in1-in2))
+print("Product: " + str(in1*in2))
+print("Power: " + str(in1**in2))
+print("Quotient (int): " + str(in1//in2))
+print("Quotient (float): " + str(in1/in2))
+print("Remainder:" + str(in1 % in2))
