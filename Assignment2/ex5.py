@@ -1,8 +1,7 @@
 actions = "\nAvailable actions: \n a - Add numbers \n v - View statistics \n x - Exit the program \n"
 
-print("Welcome to Data Statistics! \n")
+print("Welcome to Data Statistics!")
 
-numbers = []
 count = 0
 sum_ = 0
 avg = 0
@@ -16,13 +15,12 @@ while True:
         while True:
             inp2 = input("Enter number or 'x' when you are done: ")
             if inp2 != "x":
-                numbers += [int(inp2)]
                 count += 1
                 sum_ += int(inp2)
                 avg = sum_ / count
                 if int(inp2) < min_ or count == 1:
                     min_ = int(inp2)
-                elif int(inp2) > max_ or count  == 1:
+                if int(inp2) > max_ or count == 1:
                     max_ = int(inp2)
             else:
                 break
