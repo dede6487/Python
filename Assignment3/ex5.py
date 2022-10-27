@@ -22,6 +22,11 @@ while True:
         lifters.pop(name, print("Lifter '" + name + "' does not exist!"))
     elif inp == "u":
         name = input("Enter lifter name to update: ")
+        if name in lifters.keys():
+            update = input("Enter lift (one of 'squat', 'bench press', 'deadlift'): ")
+            weight = input("Enter weight(s): ")
 
+        else:
+            print("Lifter '" + name + "' does not exist!")
     else:
         print("Invalid action '" + inp + "'. Try again!")
