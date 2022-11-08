@@ -33,10 +33,16 @@ for e in rowsum:
 
 print("[", end="")
 for l in matrix:
+    print("[", end="")
+    for e in l:
+        if e != l[-1]:
+            print(e, end=" ")
+        else:
+            print(e, end="")
+    if l != matrix[-1]:
+        print("]")
     if l == matrix[-1]:
-        print(l, end="")
-    else:
-        print(l)
+      print("]", end="")
 print("]")
 
 print("row sums: ", rowsum)
