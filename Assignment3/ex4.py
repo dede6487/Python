@@ -27,7 +27,6 @@ while True:
         matrix[i] += (len(matrix[0]) - len(matrix[i])) * [0]
     i += 1
 
-
 for e in rowsum:
     totsum += e
 
@@ -39,10 +38,10 @@ for l in matrix:
             print(e, end=" ")
         else:
             print(e, end="")
-    if l != matrix[-1]:
-        print("]")
-    if l == matrix[-1]:
-      print("]", end="")
+    #if l != matrix[-1]:
+    #    print("]")
+    #else:
+    #  print("]", end="")
 print("]")
 
 print("row sums: ", rowsum)
