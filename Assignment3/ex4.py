@@ -13,18 +13,25 @@ while True:
     matrix.append([])
     matrix[i].extend(int(a) for a in row.split())
 
+    for j in range(0, i):
+        if len(matrix[i]) < len(matrix[j]):
+            matrix[i] += (len(matrix[j]) - len(matrix[i])) * [0]
+        elif len(matrix[i]) > len(matrix[j]):
+            matrix[j] += (len(matrix[i]) - len(matrix[j])) * [0]
+
     rowsum.append(0)
     for e in matrix[i]:
         rowsum[i] += e
 
     if i == 0:
-        colsum = copy.deepcopy(matrix[0])
+        colsum = list(copy.deepcopy(matrix[0]))
     else:
         for b in range(0, len(matrix[i])):
+            if len(matrix[i]) > len(colsum):
+                for m in range(0,len(matrix[i]) - len(colsum)):
+                    colsum.append(0)
             colsum[b] += matrix[i][b]
 
-    if i > 0 and len(matrix[i]) < len(matrix[0]):
-        matrix[i] += (len(matrix[0]) - len(matrix[i])) * [0]
     i += 1
 
 for e in rowsum:
@@ -33,11 +40,11 @@ for e in rowsum:
 print("[", end="")
 for l in matrix:
     print("[", end="")
-    for e in l:
-        if e is not l[-1]:
-            print(e, end=" ")
+    for e in range(0, len(l)):
+        if e != l:
+            print(l[e], end=" ")
         else:
-            print(e, end="")
+            print(l[e], end="")
     if l is not matrix[-1]:
         print("]\n ", end="")
     else:
