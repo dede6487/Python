@@ -34,14 +34,14 @@ print("[", end="")
 for l in matrix:
     print("[", end="")
     for e in l:
-        if e != l[-1]:
+        if e is not l[-1]:
             print(e, end=" ")
         else:
             print(e, end="")
-    #if l != matrix[-1]:
-    #    print("]")
-    #else:
-    #  print("]", end="")
+    if l is not matrix[-1]:
+        print("]\n ", end="")
+    else:
+        print("]", end="")
 print("]")
 
 print("row sums: ", rowsum)
