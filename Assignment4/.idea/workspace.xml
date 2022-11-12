@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="db1cd9d2-6c38-4388-99a3-a29fa1a020ec" name="Changes" comment="" />
+    <list default="true" id="e98e7d1c-3ce6-45cf-85a5-0929ea418e90" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,26 +20,26 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2GY4jsheudhyJ1YyoZId4Hoxg6J" />
+  <component name="ProjectId" id="2HS1c364wz8tIqKMTywzq6kGLU8" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="db1cd9d2-6c38-4388-99a3-a29fa1a020ec" name="Changes" comment="" />
-      <created>1666552321952</created>
+      <changelist id="e98e7d1c-3ce6-45cf-85a5-0929ea418e90" name="Changes" comment="" />
+      <created>1668263746515</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1666552321952</updated>
+      <updated>1668263746515</updated>
     </task>
     <servers />
   </component>
@@ -53,13 +53,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <watches-manager>
-      <configuration name="PythonConfigurationType">
-        <watch expression="colsum" />
-        <watch expression="matrix" />
-      </configuration>
-    </watches-manager>
   </component>
 </project>
