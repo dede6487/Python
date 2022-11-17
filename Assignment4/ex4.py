@@ -1,11 +1,21 @@
 def round_(number, ndigits: int = None):
-    if ndigits:
+    if ndigits is None:
         return int(number)
     else:
         number = float(number)
-        intnumber = int(number)
-        decimal = float(number % (10**(-ndigits)))
-        return float(intnumber + decimal)
+        intnumber = number * 10**(ndigits+1)
+        roundn = intnumber % 10
+        intnumber = intnumber - roundn
+
+        if roundn < 5:
+            roundn = 0
+        else:
+            roundn = 10
+
+        number = (intnumber + roundn) * (10**(-(ndigits+1)))
+
+        return number
+
 
 print(round(777.777))
 print(round_(777.777, 0))
