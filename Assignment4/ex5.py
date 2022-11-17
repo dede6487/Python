@@ -1,7 +1,15 @@
 def sort(elements: list, ascending: bool = True):
-    for j in range(list.len):
-        for i in range(len(list)):
-            if list[i] > list[i+1]:
-                temp = list[i]
-                list[i] = list[i+1]
-                list[i+1] = temp
+    if ascending:
+        for j in range(len(elements)):
+            for i in range(len(elements)-1):
+                if elements[i] > elements[i+1]:
+                    temp = elements[i]
+                    elements[i] = elements[i+1]
+                    elements[i+1] = temp
+    else:
+        for j in range(len(elements)):
+            for i in range(len(elements)-1):
+                if elements[i] < elements[i+1]:
+                    temp = elements[i]
+                    elements[i] = elements[i+1]
+                    elements[i+1] = temp
