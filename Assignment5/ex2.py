@@ -8,18 +8,6 @@ def gen_range(start: int, stop: int, step: int = 1):
         raise ValueError
 
     y = start
-    while True:
+    while (y < stop and step > 0) or (y > stop and step < 0):
         yield y
         y += step
-        if y >= stop:
-            break
-
-
-print(list(gen_range(0, 10)))
-print(list(gen_range(0, 10, 3)))
-print(list(gen_range(0, 10, -1))) #not yet working
-print(list(gen_range(10, 0)))
-print(list(gen_range(10, 0, -2)))
-print(list(gen_range(-10, -3, 2)))
-print(list(gen_range(0.0, 10)))
-print(list(gen_range(0, 10, 0)))
