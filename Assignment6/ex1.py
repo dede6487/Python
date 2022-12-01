@@ -15,5 +15,3 @@ def read_numbers(path: str) -> list:
                         pass
     return out
 
-
-print(read_numbers("ex1_data.txt"))
