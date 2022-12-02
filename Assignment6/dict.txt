@@ -1,0 +1,6 @@
+b'1'
+b'eins'
+b'2'
+b'zwei'
+b'3'
+b'drei'
