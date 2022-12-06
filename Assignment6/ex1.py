@@ -4,14 +4,9 @@ def read_numbers(path: str) -> list:
         for line in f:
             for word in line.split(" "):
                 try:
-                    i = int(word)
+                    i = float(word)
                     out.append(i)
                 except ValueError:
                     pass
-                    try:
-                        f = float(word)
-                        out.append(f)
-                    except ValueError:
-                        pass
     return out
 

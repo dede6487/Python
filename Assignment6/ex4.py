@@ -14,6 +14,3 @@ def chunks(path: str, size: int, **kwargs):
         while chars := f.read(size):
             yield chars
 
-
-for i, c in enumerate(chunks("ex1_data.txt", 25, mode="rb")):
-    print(f"Chunk {i} = {c}")

@@ -1,5 +1,5 @@
 b'1'
-b'eins'
+b'eins\n'
 b'2'
 b'zwei'
 b'3'
