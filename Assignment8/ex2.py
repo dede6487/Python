@@ -19,11 +19,18 @@ class Reader:
 
     def __getitem__(self, key):
         if isinstance(key, int):
-            self.file.seek(key, 0)
+            if key >= 0:
+                if key > self.__len__():
+                    raise IndexError("Reader index out of range")
+                self.file.seek(key, 0)
+            else:
+                if -key > self.__len__():
+                    raise IndexError("Reader index out of range")
+                self.file.seek(key, 2)
 
-            raise IndexError(f"indexing expects 'int', not {key.__class__.__name__}")
+            return self.file.read(1)
         else:
-            raise TypeError("Reader index out of range")
+            raise TypeError(f"indexing expects 'int', not '{key.__class__.__name__}'")
 
 
 r = Reader("ex2_data.txt")
