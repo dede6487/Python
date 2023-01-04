@@ -31,18 +31,3 @@ class Reader:
             return self.file.read(1)
         else:
             raise TypeError(f"indexing expects 'int', not '{key.__class__.__name__}'")
-
-
-r = Reader("ex2_data.txt")
-print(r.__len__())
-print(r[0])
-print(r[1])
-print(r[-1])
-try:
-    r["hi"]
-except TypeError as e:
-    print(f"{type(e).__name__}: {e}")
-try:
-    r[100]
-except IndexError as e:
-    print(f"{type(e).__name__}: {e}")
