@@ -5,13 +5,6 @@ class Aggregator:
         self.ignore_errors = ignore_errors
         self.agg = None
 
-    def _call_add_helper(self, *args):
-        for arg in args:
-            if self.agg is None:
-                self.agg = arg
-            else:
-                self.agg += arg
-
     def __call__(self, *args):
         if self.ignore_errors:
             nargs = [value for value in args if type(value) == self.agg_type]

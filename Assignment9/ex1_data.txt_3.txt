@@ -1,0 +1,5 @@
+regex: d[^ ]+
+d23g780nb
+deed
+de
+ddd32
