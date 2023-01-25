@@ -17,5 +17,3 @@ def matrix_stats(matrix: np.ndarray) -> dict:
 
     return dict(total_sum=total_sum, row_sums=row_sum, column_sums=column_sum)
 
-
-print(matrix_stats(np.arange(3 * 4).reshape(3, 4)))

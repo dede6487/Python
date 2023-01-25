@@ -10,8 +10,3 @@ def create_data(setups: list[dict], seed=None) -> dict:
         arr_[:] = np.random.uniform(size=d["n"], low=d["a"], high=d["b"])
         data[f"{d['id']}"] = arr_
     return data
-
-
-for id_, arr in create_data([{"id": "classA", "n": 10, "a": 0, "b": 1.5},{"id": "classB", "n": 20, "a": 3, "b": 4},{"id": "classC", "n": (5, 10), "a": 0, "b": 10}], 0).items():
-    print(id_, arr.shape)
-    print(arr)
